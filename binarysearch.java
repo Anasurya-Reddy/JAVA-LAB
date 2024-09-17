@@ -4,7 +4,7 @@ import java.util.Scanner;
 class BinarySearch {
     private int[] array;
     private int key;
-    
+
     BinarySearch(int[] array, int key) {
         this.array = array;
         this.key = key;
@@ -17,7 +17,7 @@ class BinarySearch {
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            
+
             if (array[mid] == key) {
                 System.out.println("Your key is found at index " + mid);
                 count = 1;
@@ -38,7 +38,13 @@ class BinarySearch {
 public class bsearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int array[] = {1, 2, 3, 4, 5, 6};
+        System.out.print("Enter the size of array:");
+        int n=sc.nextInt();
+        int array[] = new int[n];
+        System.out.println("Enter the elements into array:");
+        for(int i=0;i<array.length;i++) {
+            array[i]=sc.nextInt();
+        }
         System.out.println("Enter a key:");
         int key = sc.nextInt();
         BinarySearch binarySearch = new BinarySearch(array, key);
