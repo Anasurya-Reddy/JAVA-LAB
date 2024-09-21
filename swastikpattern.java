@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class pattren {
+public class swastikpattern {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int r = sc.nextInt();
