@@ -10,7 +10,7 @@ class FourWheeler extends Vehical {
 		}
 }
 
-class Car extends Vehical {
+class Car extends FourWheeler {
 	Car() {
 		System.out.println("This is a Car");
 	}
